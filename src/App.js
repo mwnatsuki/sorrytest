@@ -21,9 +21,6 @@ const App = () => {
     setFormState({ ...formState, [key]: value })
   }
 
-  /*1
-  */ 
-
   async function fetchTodos() {
     try {
       const todoData = await API.graphql(graphqlOperation(listTodos))
